@@ -87,6 +87,19 @@ body {
 
 /* Ponteiros*/
 
+.clock::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
 .clock .hand {
   --rotation:0;
 
@@ -114,6 +127,8 @@ body {
 }
 
 .clock .hand.hours {
-  
+  width: 10px;
+  height: 25%;
+  background-color: black;
 }
 
