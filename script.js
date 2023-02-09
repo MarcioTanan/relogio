@@ -2,7 +2,11 @@ const hourHand = document.querySelector('.hand.hours')
 const minutesHand = document.querySelector('.hand.minutes')
 const secondsHand = document.querySelector('.hand.seconds')
 
-const setClock = () =>{
+const setRotation = () => {
+
+}
+
+const setClock = (element, rotationPercentage) =>{
 const currentDate = new Date();
 
 const secondsPercentage = currentDate.getSeconds() / 60;
